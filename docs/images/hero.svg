@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 420" role="img" aria-labelledby="title desc">
+  <title id="title">CampusRelink</title>
+  <desc id="desc">Campus network auto-reconnect. 校园网自动认证与断线重连。</desc>
+  <rect width="1320" height="420" fill="#12324B"/>
+  <g transform="translate(65 69) scale(1.0625)">  <rect x="8" y="8" width="240" height="240" rx="56" fill="#12324B"/>
+  <path d="M 166.027 199.519 A 81 81 0 1 1 195.152 82.705" stroke="#38D9B5" stroke-width="17" stroke-linecap="round"/>
+  <path d="M 202.981 94.312 L 174.907 83.092 L 203.095 64.080 Z" fill="#38D9B5"/>
+  <g stroke="#F7FCFF" stroke-width="12" stroke-linecap="round"><path d="M 91.230 119.230 A 52 52 0 0 1 164.770 119.230"/><path d="M 107.494 135.494 A 29 29 0 0 1 148.506 135.494"/></g>
+  <circle cx="128" cy="156" r="7.5" fill="#F7FCFF"/>
+</g>
+  <text x="382" y="185" font-family="Segoe UI, Arial, sans-serif" font-size="92" font-weight="600" fill="#F7FCFF">CampusRelink</text>
+  <text x="389" y="254" font-family="Segoe UI, Arial, sans-serif" font-size="32" fill="#38D9B5">Campus network auto-reconnect</text>
+  <text x="390" y="316" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#C5DFEA">校园网自动认证与断线重连</text>
+</svg>

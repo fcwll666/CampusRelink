@@ -1,0 +1,33 @@
+name: 功能建议
+description: 说明希望解决的具体问题和使用场景。
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请先搜索已有建议，并阅读 README 中的适用范围。当前版本使用单账号和一种内置认证预设；修改接口地址不代表支持所有校园门户。
+        请使用虚构示例，勿公开账号、密码、令牌、本机代理具体地址/IP或未经清理的校园配置。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 想解决什么问题
+      description: 描述目前的操作和遇到的困难，帮助我们理解使用场景。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 期望的行为
+      description: 说明你希望应用如何工作，以及完成后如何判断问题已解决。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 已考虑的替代方式（可选）
+      description: 例如现有设置、手动操作或其他不改变应用的办法。
+  - type: textarea
+    id: context
+    attributes:
+      label: 补充背景（可选）
+      description: 可提供去敏示意图或公开协议资料。无需提交真实认证请求、响应、配置或 Wi-Fi 信息。

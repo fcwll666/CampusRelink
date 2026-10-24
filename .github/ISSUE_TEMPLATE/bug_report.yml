@@ -1,0 +1,71 @@
+name: 问题反馈
+description: 报告 CampusRelink 的异常行为，帮助我们定位和修复。
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请先搜索已有 issue，并查看 README 中的使用范围。
+        **公开 issue 中请勿提交账号、密码、令牌、真实校园认证响应、本机代理的具体地址/IP、未经清理的配置或完整诊断包。**
+        截图也需遮盖用户名、SSID、网络地址等标识。安全漏洞请按仓库 SECURITY.md 私下报告。
+        不必为提交 issue 再次登录校园网或切换 Wi-Fi；是否在真实网络复现由你自行决定。
+  - type: input
+    id: version
+    attributes:
+      label: CampusRelink 版本与来源
+      description: 填写关于窗口中的版本，以及使用 Release 包还是自行构建；自行构建可提供提交号。
+      placeholder: "例如：1.0.3，GitHub Release 的 win-x64 包"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows 版本
+      description: 填写 Windows 10 / 11、系统版本及 x64 架构；不需要设备名、产品 ID 或完整系统信息导出。
+      placeholder: "例如：Windows 11 24H2，x64"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: 出现问题的环节
+      options:
+        - 启动或界面
+        - 保存设置或密码占位提示
+        - 校园网认证或重连
+        - Wi-Fi 搜索或自动连接
+        - 登录自启或开机代理修复
+        - 构建、测试或打包
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 写出操作顺序和必要选项。用虚构值替换账号、网络名称和非公开地址；代理只描述是否启用、是否为回环地址及端口是否有监听，不提供具体地址/IP。
+      placeholder: |
+        1. 打开应用……
+        2. 选择……
+        3. 点击……
+    validations:
+      required: true
+  - type: textarea
+    id: expected_actual
+    attributes:
+      label: 预期结果与实际结果
+      description: 尽量提供界面上的错误文字，并说明每次出现还是偶发。
+    validations:
+      required: true
+  - type: textarea
+    id: sanitized_evidence
+    attributes:
+      label: 已去敏的日志片段或截图（可选）
+      description: 只保留与问题直接相关的少量片段。先人工检查，删除账号、密码、令牌、网络标识、本机代理地址/IP及个人路径；不要上传 settings.xml、credentials.dat、代理备份、Wi-Fi 配置或完整日志。
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已检查正文和附件，未包含凭据、个人信息、本机代理具体地址/IP或未经清理的配置。
+          required: true

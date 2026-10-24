@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" color="#12324B" role="img" aria-labelledby="title desc">
+  <title id="title">CampusRelink</title>
+  <desc id="desc">A reconnect arrow forming a C surrounds a Wi-Fi signal.</desc>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="#12324B"/>
+  <path d="M 166.027 199.519 A 81 81 0 1 1 195.152 82.705" stroke="#38D9B5" stroke-width="17" stroke-linecap="round"/>
+  <path d="M 202.981 94.312 L 174.907 83.092 L 203.095 64.080 Z" fill="#38D9B5"/>
+  <g stroke="#F7FCFF" stroke-width="12" stroke-linecap="round"><path d="M 91.230 119.230 A 52 52 0 0 1 164.770 119.230"/><path d="M 107.494 135.494 A 29 29 0 0 1 148.506 135.494"/></g>
+  <circle cx="128" cy="156" r="7.5" fill="#F7FCFF"/>
+</svg>

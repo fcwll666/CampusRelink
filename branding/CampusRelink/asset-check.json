@@ -1,0 +1,21 @@
+{
+  "name": "CampusRelink",
+  "tagline": "Campus network auto-reconnect",
+  "icon_sizes": [
+    16,
+    20,
+    24,
+    32,
+    40,
+    48,
+    64,
+    96,
+    128,
+    256
+  ],
+  "svg_xml_valid": true,
+  "png_decode_valid": true,
+  "ico_decode_valid": true,
+  "ico_encoding": "32-bit BGRA DIB with AND masks",
+  "network_or_system_settings_accessed": false
+}

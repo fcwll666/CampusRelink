@@ -1,0 +1,37 @@
+# Generated binaries, test results and packaging staging.
+/artifacts/
+/dist/
+/outputs/
+/bin/
+/obj/
+/.vs/
+*.user
+*.suo
+*.exe
+*.dll
+*.pdb
+*.zip
+__pycache__/
+*.py[cod]
+
+# Local application data and diagnostics must never be published.
+/data/
+/diag/
+**/settings.xml
+**/credentials.dat
+**/campusflow.log*
+**/selftest.out
+**/startup-proxy-*.xml
+**/startup-proxy-check.txt
+**/task*.xml
+.env
+.env.*
+*.key
+*.pfx
+*.pem
+*.cer
+*.tmp
+*.bak
+*.log
+*.out
+/.codex/
