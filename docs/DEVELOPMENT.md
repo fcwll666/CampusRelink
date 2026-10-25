@@ -57,13 +57,12 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 
 `branding/CampusRelink/CampusRelink.ico` 同时作为 EXE 图标和 `CampusRelink.AppIcon` 清单资源嵌入，测试编译也嵌入相同资源。运行时不依赖外部素材目录。普通构建直接使用仓库中的 ICO；只有重新生成品牌素材才需要 Python 3 与 Pillow。新增素材必须注明来源和再分发许可，不分发系统字体文件。
 
-README 横幅路径为 `docs/images/hero.png`；界面图片约定为 `docs/images/main-light.png`、`docs/images/main-dark.png` 和 `docs/images/about.png`。更新截图时清除账号、网络名称、地址、个人路径和设备标识，不使用真实配置作公开演示。
+README 保留品牌横幅 `docs/images/hero.png`，不展示软件页面截图。
 
-重新生成文档图片时，可运行以下可选工具。横幅工具需要 Python 3 与 Pillow；截图工具使用 .NET Framework 和隔离演示数据，编译到忽略的 `artifacts/readme-preview/`，只渲染真实窗体，不启动后台、不认证、不扫描 Wi-Fi、不修改网络或代理设置。
+重新生成横幅时，可运行以下可选工具，需要 Python 3 与 Pillow，不启动应用或访问网络设置。
 
 ```powershell
 python .\scripts\Build-ReadmeHero.py
-powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\Capture-ReadmeScreenshots.ps1
 ```
 
 源码包采用 `Package.ps1` 的明确文件清单。新增需要分发的文档、素材或脚本后，检查该清单与压缩包实际内容；不要改为递归复制项目目录。发布操作见[发布指南](RELEASING.md)。
